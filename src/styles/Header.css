@@ -1,0 +1,128 @@
+.header {
+  background-color: #ffffff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+}
+
+.header-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #2c3e50;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.logo:hover {
+  color: #3498db;
+}
+
+.nav {
+  display: flex;
+  gap: 2rem;
+}
+
+.nav-link {
+  color: #2c3e50;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+  color: #3498db;
+}
+
+@media (max-width: 768px) {
+  .header-container {
+    flex-direction: column;
+    padding: 1rem;
+  }
+
+  .nav {
+    margin-top: 1rem;
+    gap: 1rem;
+  }
+}
+
+.header-pro {
+  position: sticky;
+  top: 0;
+  width: 100%;
+  background: #fff;
+  box-shadow: 0 2px 12px 0 rgba(34,34,59,0.06);
+  z-index: 100;
+}
+
+.header-pro-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0.75rem 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo-pro {
+  font-size: 1.5rem;
+  font-weight: 800;
+  color: #22223b;
+  letter-spacing: -1px;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  transition: color 0.2s;
+}
+.logo-pro:hover {
+  color: #4a4e69;
+}
+.logo-dot {
+  color: #4a4e69;
+  font-size: 1.2em;
+  margin-right: 0.2em;
+}
+
+.nav-pro {
+  display: flex;
+  gap: 2.5rem;
+}
+
+.nav-pro-link {
+  color: #22223b;
+  font-weight: 500;
+  text-decoration: none;
+  font-size: 1.05rem;
+  padding: 0.25rem 0;
+  border-bottom: 2px solid transparent;
+  transition: border-color 0.2s, color 0.2s;
+}
+
+.nav-pro-link:hover, .nav-pro-link.active {
+  color: #4a4e69;
+  border-bottom: 2px solid #4a4e69;
+}
+
+@media (max-width: 768px) {
+  .header-pro-container {
+    padding: 0.75rem 1rem;
+  }
+  .nav-pro {
+    gap: 1.2rem;
+  }
+  .logo-pro {
+    font-size: 1.1rem;
+  }
+} 
