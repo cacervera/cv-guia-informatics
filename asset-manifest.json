@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/cv-guia-informatics/static/css/main.ddc82cf8.css",
-    "main.js": "/cv-guia-informatics/static/js/main.d24a952c.js",
+    "main.js": "/cv-guia-informatics/static/js/main.95cda377.js",
     "static/js/453.412ba2dc.chunk.js": "/cv-guia-informatics/static/js/453.412ba2dc.chunk.js",
     "index.html": "/cv-guia-informatics/index.html",
     "main.ddc82cf8.css.map": "/cv-guia-informatics/static/css/main.ddc82cf8.css.map",
-    "main.d24a952c.js.map": "/cv-guia-informatics/static/js/main.d24a952c.js.map",
+    "main.95cda377.js.map": "/cv-guia-informatics/static/js/main.95cda377.js.map",
     "453.412ba2dc.chunk.js.map": "/cv-guia-informatics/static/js/453.412ba2dc.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.ddc82cf8.css",
-    "static/js/main.d24a952c.js"
+    "static/js/main.95cda377.js"
   ]
 }
