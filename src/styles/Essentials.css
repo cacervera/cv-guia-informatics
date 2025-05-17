@@ -1,0 +1,90 @@
+/* src/styles/Essentials.css */
+
+.essentials-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
+    margin-top: 30px;
+  }
+  
+  .essential-card {
+    background: #fff;
+    border-radius: 10px;
+    padding: 20px;
+    position: relative;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+    transition: transform 0.3s ease;
+  }
+  .essential-card:hover {
+    transform: translateY(-5px);
+  }
+  
+  .card-icon {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    color: #2c3e50;
+  }
+  
+  .essential-title {
+    font-size: 1.25rem;
+    margin-bottom: 10px;
+  }
+  
+  .timeline-item {
+    position: relative;
+    padding-left: 80px;
+  }
+  .timeline-date {
+    position: absolute;
+    left: 0;
+    top: 0;
+    font-weight: bold;
+    color: #555;
+  }
+  
+  .example {
+    margin-top: 10px;
+    padding: 10px;
+    border-radius: 6px;
+    font-size: 0.95rem;
+  }
+  .good {
+    background: #e8f5e9;
+    border: 1px solid #66bb6a;
+    color: #2e7d32;
+  }
+  .bad {
+    background: #ffebee;
+    border: 1px solid #ef5350;
+    color: #c62828;
+  }
+  
+  .link-button {
+    display: inline-block;
+    margin-right: 10px;
+    margin-top: 8px;
+    padding: 8px 12px;
+    background: #007bff;
+    color: #fff;
+    border-radius: 6px;
+    text-decoration: none;
+    transition: background 0.2s;
+  }
+  .link-button:hover {
+    background: #0056b3;
+  }
+  
+  /* Fade-in animations (requires AOS: Animate On Scroll library) */
+  [data-aos] {
+    opacity: 0;
+    transition-property: opacity, transform;
+  }
+  [data-aos].aos-animate {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  [data-aos="fade-up"] {
+    transform: translateY(20px);
+  }
+  

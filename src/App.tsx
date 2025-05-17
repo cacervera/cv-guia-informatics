@@ -10,6 +10,7 @@ import Plantilles from './components/sections/Plantilles';
 import BonesPractiques from './components/sections/BonesPractiques';
 import MalesPractiques from './components/sections/MalesPractiques';
 import './App.css';
+import Essentials from './components/sections/Essentials';
 
 const App: React.FC = () => {
   return (
@@ -23,6 +24,7 @@ const App: React.FC = () => {
           <MalesPractiques />
           <BonesPractiques />
           <ATS />
+          <Essentials />
           <Plantilles />
         </main>
       </div>

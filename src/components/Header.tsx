@@ -13,7 +13,7 @@ const Header: React.FC = () => {
   return (
     <header className="header">
       <nav className="nav-container">
-        <Link to="/" className="nav-logo" onClick={() => scrollToSection('hero')}>
+        <Link to="#hero" className="nav-logo" onClick={() => scrollToSection('hero')}>
           CV Guia
         </Link>
         <div className="nav-links">
@@ -21,6 +21,7 @@ const Header: React.FC = () => {
           <Link to="#objectiu" className="nav-link" onClick={() => scrollToSection('objectiu')}>Objectiu</Link>
           <Link to="#contingut" className="nav-link" onClick={() => scrollToSection('contingut')}>Contingut</Link>
           <Link to="#ats" className="nav-link" onClick={() => scrollToSection('ats')}>ATS</Link>
+          <Link to="#essentials" className="nav-link" onClick={() => scrollToSection('ats')}>Parts essencials</Link>
           <Link to="#plantilles" className="nav-link" onClick={() => scrollToSection('plantilles')}>Plantilles</Link>
         </div>
       </nav>
