@@ -3,7 +3,7 @@ import '../../styles/Hero.css';
 
 const Hero: React.FC = () => {
   return (
-    <section className="hero">
+    <section className="hero" id="hero">
       <div className="hero-container">
         <h1 className="hero-title">
           Guia Completa per Crear un CV Efectiu en Informàtica
@@ -14,9 +14,6 @@ const Hero: React.FC = () => {
         <div className="hero-cta">
           <a href="#objectiu" className="cta-button primary">
             Començar
-          </a>
-          <a href="#video" className="cta-button secondary">
-            Veure Vídeo
           </a>
         </div>
       </div>

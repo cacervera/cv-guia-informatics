@@ -10,11 +10,14 @@ const Header: React.FC = () => {
           <span className="logo-dot">●</span> CV Guia Informàtica
         </Link>
         <nav className="nav-pro">
-          <Link to="/" className="nav-pro-link">Inici</Link>
-          <Link to="/objectiu" className="nav-pro-link">Objectiu</Link>
-          <Link to="/contingut" className="nav-pro-link">Contingut</Link>
-          <Link to="/plantilles" className="nav-pro-link">Plantilles</Link>
-          <Link to="/ats" className="nav-pro-link">ATS</Link>
+        <a href="/" className="nav-pro-link">Inici</a>
+        <a href="#objectiu" className="nav-pro-link">Objectiu</a>
+        <a href="#contingut" className="nav-pro-link">Contingut</a>
+        <a href="#males-practiques" className="nav-pro-link">Males Practiques</a>
+        <a href="#bones-practiques" className="nav-pro-link">Bones Practiques</a>
+        <a href="#ats" className="nav-pro-link">ATS</a>
+        <a href="#plantilles" className="nav-pro-link">Plantilles</a>
+        
         </nav>
       </div>
     </header>

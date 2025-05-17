@@ -1,30 +1,75 @@
 import React from 'react';
+import { BarChart2, Target, UserCog, Zap } from 'lucide-react';
+import { motion } from 'framer-motion';
 import '../../styles/Section.css';
 
 const Objectiu: React.FC = () => {
+  const features = [
+    {
+      icon: <UserCog className="icon feature" />, 
+      title: 'Requisits de la Indústria',
+      description: 'Entén les tecnologies i frameworks més demandats per empreses de TI.'
+    },
+    {
+      icon: <BarChart2 className="icon feature" />, 
+      title: 'Tendències del Mercat',
+      description: 'Segueix les àrees emergents com IA, DevOps i ciberseguretat.'
+    },
+    {
+      icon: <Zap className="icon feature" />, 
+      title: 'Optimització ATS',
+      description: 'Aprèn a usar paraules clau i disseny compatible amb escanejats automàtics.'
+    },
+    {
+      icon: <Target className="icon feature" />, 
+      title: 'Impacte Visual',
+      description: 'Disseny net amb elements visuals que destaquen les teves habilitats.'
+    }
+  ];
+
   return (
-    <section className="section" id="objectiu">
+    <section className="section objective" id="objectiu">
       <div className="container">
-        <h2 className="section-title">Per què un CV per a informàtics?</h2>
-        <div className="section-content">
-          <p className="section-text">
-            L'alta digitalització i transformació tecnològica del mercat laboral obliga els professionals d'informàtica a actualitzar contínuament les seves competències. Segons el World Economic Forum, cap al 2025 fins a 97 milions de nous llocs de treball requeriran habilitats digitals específiques. En aquest context, un currículum clar i personalitzat és essencial per destacar en un sector competitiu i en ràpida evolució. A més, les empreses i els sistemes de selecció automàtics (ATS) cada cop perfeccionen més els seus filtres de recerca de talent. Per tant, un CV optimitzat ajuda el candidat a aparèixer als filtres de cerca i a mostrar les seves habilitats rellevants al mercat tecnològic.
-          </p>
-          <ul className="feature-list">
-            <li>Les tendències actuals del sector tecnològic</li>
-            <li>Les expectatives dels reclutadors</li>
-            <li>L'optimització per sistemes ATS</li>
-            <li>Les millors pràctiques en disseny i estructura</li>
-          </ul>
-          <div className="section-cta">
-            <a href="#contingut" className="cta-button primary">
-              Veure Contingut
-            </a>
-          </div>
+        <motion.h2
+          className="section-title"
+          initial={{ opacity: 0, y: -20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6 }}
+        >
+          Per què un CV per a Informàtics?
+        </motion.h2>
+        <motion.p
+          className="section-intro"
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ delay: 0.3, duration: 0.6 }}
+        >
+          En un sector en constant evolució, un CV intel·ligent combina contingut rellevant amb un disseny optimitzat per destacar entre reclutadors i sistemes ATS.
+        </motion.p>
+
+        <div className="features-grid">
+          {features.map((f, i) => (
+            <motion.div
+              key={i}
+              className="feature-card"
+              whileHover={{ scale: 1.05 }}
+              transition={{ type: 'spring', stiffness: 250 }}
+            >
+              <div className="feature-icon">{f.icon}</div>
+              <h3 className="feature-title">{f.title}</h3>
+              <p className="feature-desc">{f.description}</p>
+            </motion.div>
+          ))}
+        </div>
+
+        <div className="section-cta">
+          <a href="#contingut" className="cta-button primary">
+            Vés al contingut
+          </a>
         </div>
       </div>
     </section>
   );
 };
 
-export default Objectiu; 
+export default Objectiu;

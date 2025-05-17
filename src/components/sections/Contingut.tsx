@@ -1,48 +1,88 @@
 import React from 'react';
+import { LayoutGrid, Type, Search, BarChart2, CheckCircle2, MessageSquare, XCircle } from 'lucide-react';
 import '../../styles/Section.css';
 
 const Contingut: React.FC = () => {
   return (
     <section className="section" id="contingut">
       <div className="container">
-        <h2 className="section-title">Estructura d'un CV efectiu</h2>
-        <div className="section-content">
-          <div className="content-grid">
-            <div className="content-card">
-              <h3 className="card-title">Format cronològic vs. funcional</h3>
-              <p className="card-text">
-                El CV pot organitzar-se en format cronològic invers (experiència més recent primer) o funcional (per habilitats o blocs temàtics). El format cronològic és el més comú quan es vol destacar l'evolució de càrrecs recents, mentre que el funcional serveix per ressaltar habilitats claus quan hi ha canvis freqüents de rol. Tria el que millor posi en valor el teu perfil.
-              </p>
-            </div>
-            <div className="content-card">
-              <h3 className="card-title">Seccions clau</h3>
-              <p className="card-text">
-                Un CV d'informàtica típic inclou: (1) Dades personals, (2) Perfil o resum professional, (3) Experiència laboral, (4) Educació/Formació, (5) Habilitats tècniques, (6) Projectes destacats. També pots afegir idiomes, activitats, links a portafolis o repositoris de codi, etc. Utilitza encapçalaments clars i estructura la informació de manera que sigui fàcil de llegir i captar per sistemes ATS.
-              </p>
-            </div>
-            <div className="content-card">
-              <h3 className="card-title">Competències destacades</h3>
-              <p className="card-text">
-                <b>Habilitats tècniques:</b> Programació (Python, Java, C++), bases de dades (MySQL, SQL, NoSQL), desenvolupament web (HTML, CSS, JavaScript), sistemes Linux/Windows, control de versions (Git), cloud (AWS, Azure, Google Cloud), ciberseguretat, frameworks i eines (Docker, Kubernetes, TensorFlow), certificacions (AWS Certified, etc.).<br /><br />
-                <b>Habilitats transversals:</b> Treball en equip, resolució de problemes, adaptabilitat, comunicació clara, gestió del temps, lideratge. Selecciona les que millor encaixin amb el rol i l'empresa.
-              </p>
-            </div>
-            <div className="content-card">
-              <h3 className="card-title">Plantilles Overleaf recomanades</h3>
-              <p className="card-text">
-                Per a usuaris de LaTeX, Overleaf ofereix plantilles excel·lents com Simple-CV (bàsic i minimalista) o CS/IT/SWE Resume (per a desenvolupadors i enginyers). Aquestes plantilles ja integren un format clar i totes les seccions típiques, facilitant la creació d'un currículum professional.
-              </p>
-            </div>
+        <h2 className="section-title">Estructura d'un CV d'Enginyeria Informàtica</h2>
+        <p className="section-intro">
+          Un currículum efectiu combina disseny net, llegibilitat i contingut rellevant. A continuació, es detallen principis teòrics i pràctics per dissenyar un CV que destaqui davant reclutadors i sistemes ATS.
+        </p>
+
+        <div className="content-grid">
+          {/* Tipus de format */}
+          <div className="content-card">
+            <h3 className="card-title">
+              <LayoutGrid className="icon" /> Format Cronològic vs Funcional
+            </h3>
+            <p className="card-text">
+              <strong>Cronològic Invers:</strong> Presenta les experiències de forma cronològica inversa, destacant la trajectòria professional.<br />
+              <strong>Funcional:</strong> Organitza per blocs de competències, ideal si hi ha canvis constants de rol o per ressaltar habilitats específiques.
+            </p>
           </div>
-          <div className="section-cta">
-            <a href="#plantilles" className="cta-button primary">
-              Veure Plantilles
-            </a>
+
+          {/* Seccions Clau */}
+          <div className="content-card">
+            <h3 className="card-title">
+              <Type className="icon" /> Seccions Essencials
+            </h3>
+            <ul className="card-list">
+              <li><strong>Encapçalament:</strong> Nom, títol professional, contacte i enllaços (LinkedIn, GitHub).</li>
+              <li><strong>Resum Professional:</strong> 3–4 línies amb valor diferencial i objectiu de carrera.</li>
+              <li><strong>Experiència Laboral:</strong> Descripció de rols, tecnologies i resultats quantificats.</li>
+              <li><strong>Formació i Certificacions:</strong> Titulacions, cursos online i certificacions rellevants.</li>
+              <li><strong>Habilitats Tècniques i Transversals:</strong> Llistat amb classificació per nivell i barres de progrés.</li>
+              <li><strong>Projectes i Publicacions:</strong> Enllaços a repositoris, demos, articles o contribucions open source.</li>
+            </ul>
           </div>
+
+          {/* Bones pràctiques de disseny */}
+          <div className="content-card">
+            <h3 className="card-title">
+              <BarChart2 className="icon" /> Principis de Disseny i Llegibilitat
+            </h3>
+            <p className="card-text">
+              <strong>Tipografia:</strong> Fonts sans-serif (Arial, Calibri o Roboto) mida 10–12pt per text i 14–16pt per títols. <br/>
+              <strong>Marge i Espaiat:</strong> Marges de 1–1.5cm i interlineat 1.15 per millorar la lectura.<br/>
+              <strong>Color i Contrast:</strong> Paleta neutra amb un color destacat per títols, assegurant contrast WCAG AA.<br/>
+              <strong>Iconografia i Gràfics:</strong> Emprar icones discretes i gràfics de competències per atraure l’atenció mantenint professionalitat.
+            </p>
+          </div>
+
+          {/* Optimització ATS */}
+          <div className="content-card">
+            <h3 className="card-title">
+              <Search className="icon" /> Optimització per ATS
+            </h3>
+            <ul className="card-list">
+              <li>Paraules clau: incorpora termes de l’oferta de treball (tecnologies, metodologies).</li>
+              <li>Format: evita gràfics complexos, capçaleres i peus de pàgina.</li>
+              <li>Arxiu: envia sempre en PDF per conservar format i fonts.</li>
+              <li>Seccions clares amb encapçalaments estàndard (p.ex. "Experiència", "Formació").</li>
+            </ul>
+          </div>
+
+          {/* Redacció i to */}
+          <div className="content-card">
+            <h3 className="card-title">
+              <MessageSquare className="icon" /> Redacció i Tono Professional
+            </h3>
+            <p className="card-text">
+              Utilitza verbs d’acció (Desenvolupat, Liderat, Optimitzat). Siguin concís, evita frases passives i emplea mètriques sempre que sigui possible ("Millora de 25% el rendiment"). Adapta el llenguatge segons l’empresa i el rol per personalitzar cada candidatura.
+            </p>
+          </div>
+
+          
+        </div>
+
+        <div className="section-cta">
+          <a href="#males-practiques" className="cta-button primary">Més sobre males pràctiques</a>
         </div>
       </div>
     </section>
   );
 };
 
-export default Contingut; 
+export default Contingut;
