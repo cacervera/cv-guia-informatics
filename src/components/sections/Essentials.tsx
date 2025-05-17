@@ -46,6 +46,9 @@ const Essentials: React.FC = () => {
           <p><strong>Llenguatges:</strong> Python, JavaScript, SQL</p>
           <p><strong>Frameworks:</strong> React, Django</p>
           <p><strong>Eines:</strong> Git, Docker, Jenkins</p>
+          <p><strong>Metodologies:</strong> Agile, Scrum, Kanban</p>
+            <p className="tip">Les metodologies de treball en equip com Agile o Scrum són molt valorades per les empreses, especialment en entorns col·laboratius i projectes iteratius.</p>
+
         </div>
 
         {/* Educació */}
