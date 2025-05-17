@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/cv-guia-informatics/static/css/main.d1fdf517.css",
-    "main.js": "/cv-guia-informatics/static/js/main.f2d807de.js",
+    "main.css": "/cv-guia-informatics/static/css/main.ddc82cf8.css",
+    "main.js": "/cv-guia-informatics/static/js/main.d24a952c.js",
     "static/js/453.412ba2dc.chunk.js": "/cv-guia-informatics/static/js/453.412ba2dc.chunk.js",
     "index.html": "/cv-guia-informatics/index.html",
-    "main.d1fdf517.css.map": "/cv-guia-informatics/static/css/main.d1fdf517.css.map",
-    "main.f2d807de.js.map": "/cv-guia-informatics/static/js/main.f2d807de.js.map",
+    "main.ddc82cf8.css.map": "/cv-guia-informatics/static/css/main.ddc82cf8.css.map",
+    "main.d24a952c.js.map": "/cv-guia-informatics/static/js/main.d24a952c.js.map",
     "453.412ba2dc.chunk.js.map": "/cv-guia-informatics/static/js/453.412ba2dc.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.d1fdf517.css",
-    "static/js/main.f2d807de.js"
+    "static/css/main.ddc82cf8.css",
+    "static/js/main.d24a952c.js"
   ]
 }
