@@ -53,11 +53,7 @@ const BonesPractiques: React.FC = () => {
             </motion.div>
           ))}
         </div>
-        <div className="section-cta">
-          <a href="#ats" className="cta-button primary">
-            Més sobre ATS i IA
-          </a>
-        </div>
+        
       </div>
     </section>
   );

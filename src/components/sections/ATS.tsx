@@ -27,9 +27,7 @@ const ATS: React.FC = () => {
               </p>
             </div>
           </div>
-          <div className="section-cta">
-              <a href="#plantilles" className="cta-button primary">Veure plantilles</a>
-          </div>
+          
         </div>
       </div>
     </section>

@@ -62,11 +62,7 @@ const Objectiu: React.FC = () => {
           ))}
         </div>
 
-        <div className="section-cta">
-          <a href="#contingut" className="cta-button primary">
-            Vés al contingut
-          </a>
-        </div>
+        
       </div>
     </section>
   );

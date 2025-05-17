@@ -109,7 +109,7 @@ const Plantilles: React.FC = () => {
         </div>
 
         <div className="section-cta">
-          <a href="#objectiu" className="cta-button primary">Tornar a l'objectiu</a>
+          <a href="#hero" className="cta-button primary">Tornar a l'inici</a>
         </div>
       </div>
 

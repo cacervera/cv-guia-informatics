@@ -71,9 +71,7 @@ const MalesPractiques: React.FC = () => {
             </motion.div>
           ))}
         </div>
-        <div className="section-cta">
-          <a href="#bones-practiques" className="cta-button primary">Més sobre Bones Pràctiques</a>
-        </div>
+        
       </div>
     </section>
   );
