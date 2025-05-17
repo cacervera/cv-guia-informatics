@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/cv-guia-informatics/static/css/main.d99e3e96.css",
+    "main.js": "/cv-guia-informatics/static/js/main.6f038a17.js",
+    "static/js/453.412ba2dc.chunk.js": "/cv-guia-informatics/static/js/453.412ba2dc.chunk.js",
+    "index.html": "/cv-guia-informatics/index.html",
+    "main.d99e3e96.css.map": "/cv-guia-informatics/static/css/main.d99e3e96.css.map",
+    "main.6f038a17.js.map": "/cv-guia-informatics/static/js/main.6f038a17.js.map",
+    "453.412ba2dc.chunk.js.map": "/cv-guia-informatics/static/js/453.412ba2dc.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.d99e3e96.css",
+    "static/js/main.6f038a17.js"
+  ]
+}
