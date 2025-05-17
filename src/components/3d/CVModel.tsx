@@ -7,7 +7,7 @@ const CVPage: React.FC<{ rotation: number; template: string }> = ({ rotation, te
   const meshRef = useRef<THREE.Mesh>(null);
 
   // Carreguem la textura del CV
-  const texture = useTexture(`/images/${template.toLowerCase().replace(/\s+/g, '-').normalize('NFD').replace(/[\u0300-\u036f]/g, '')}.png`);
+  const texture = useTexture(`${process.env.PUBLIC_URL}/images/${template.toLowerCase().replace(/\s+/g, '-').normalize('NFD').replace(/[\u0300-\u036f]/g, '')}.png`);
 
   useFrame(() => {
     if (meshRef.current) {
@@ -58,4 +58,4 @@ const CVModel: React.FC<{ activeTemplate: string }> = ({ activeTemplate }) => {
   );
 };
 
-export default CVModel; 
+export default CVModel;
