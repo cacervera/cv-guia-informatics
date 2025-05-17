@@ -2,6 +2,7 @@
   "name": "cv-guia-informatics",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://cacervera.github.io/cv-guia-informatics/",
   "dependencies": {
     "@react-three/drei": "^10.0.7",
     "@react-three/fiber": "^9.1.2",
@@ -23,6 +24,8 @@
     "web-vitals": "^2.1.4"
   },
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
